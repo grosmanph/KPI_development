@@ -1,0 +1,29 @@
+Intelie Data Scientist Challenge - in/off slips detection.
+Rio de Janeiro/RJ - Brazil
+Aug 20, 2021
+
+
+** challenge_data.csv **
+
+The file challenge_data.csv contains data collected by sensors in a rig during a tripping out operation. We expect that the data has a sample rate of 2 samples per second.
+
+The file has the following columns:
+* index: timestamp in ms
+* BDEP: bit depth in m
+* TPO: fluid flow in gpm
+* HL: hook load in klbf
+* BHT: block position in m
+* RPM: rotary speed in rpm
+* TOR: torque in klbf-ft
+* DEPT: hole depth in m
+* WOB: weight on bit in klbf
+
+
+** challenge_annotation.csv **
+
+The file challenge_annotation.csv contains annotated data on the classification change points, i.e., the timestamp of an 'off_slips' annotation marks the beggining of the 'off_slips' state, it remains unchanges until the timestamp of the next annotation.
+
+The file has the following columns:
+* index: timestamp in ms
+* Annotation: annotations
+
